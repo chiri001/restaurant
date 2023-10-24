@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ocean's Bounty Seafood Grill</title>
+
+        <link rel="stylesheet" href="restaurant.css" />
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.js"
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+            crossorigin="anonymous"
+        ></script>
+        <script src="restaurant.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+        />
+    </head>
+
+    <body>
+        <!-----------------------------Header----------------------->
+        <div class="header" id="header">
+            <div class="header-items">
+                <nav class="header-text">
+                    <ul>
+                        <div class="left-header-text">
+                            <li>
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li>
+                                <a href="about.html" class="nav-link">About</a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link">Menu</a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link">Reservation</a>
+                            </li>
+                        </div>
+                    </ul>
+                </nav>
+                <div class="logo-image">
+                    <a href="index.html">
+                        <img src="Images/rlogo.jpg" alt="" class="logo" />
+                    </a>
+                </div>
+                <nav class="header-text">
+                    <ul>
+                        <div class="right-header-text">
+                            <li>
+                                <a href="#" class="nav-link">Online Order</a>
+                            </li>
+                            <li><a href="#" class="nav-link">Events</a></li>
+                            <li><a href="#" class="nav-link">Gift Card</a></li>
+                            <li><a href="#" class="nav-link">Contact</a></li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!--------------------------------events-------------------------->
+        <div class="event" id="event">
+            <div class="upcoming-events">
+                <div class="upcoming-events-title">
+                    <div class="sp-title">
+                        <img src="Images/hangingboard copy.jpeg" alt="" />
+                        <h1>Upcoming Events</h1>
+                    </div>
+                </div>
+                <div class="new-event">
+                    <div class="event-image">
+                        <img src="Images/food1.jpg" alt="" />
+                    </div>
+                    <div class="event-info">
+                        <h2>Sea Food Fest</h2>
+                        <h3>Date : 10th November 2023</h3>
+                        <h3>Ticket: $40 / person</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Cupiditate eaque nesciunt vel distinctio
+                            ratione voluptate, animi totam repellat porro magnam
+                            ea doloribus. Veritatis, quibusdam dolores
+                            temporibus iure debitis eligendi ratione?
+                        </p>
+                    </div>
+                </div>
+                <div class="new-event">
+                    <div class="event-image">
+                        <img src="Images/food1.jpg" alt="" />
+                    </div>
+                    <div class="event-info">
+                        <h2>Sea Food Fest</h2>
+                        <h3>Date : 10th November 2023</h3>
+                        <h3>Ticket: $40 / person</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Cupiditate eaque nesciunt vel distinctio
+                            ratione voluptate, animi totam repellat porro magnam
+                            ea doloribus. Veritatis, quibusdam dolores
+                            temporibus iure debitis eligendi ratione?
+                        </p>
+                    </div>
+                </div>
+                <div class="new-event">
+                    <div class="event-image">
+                        <img src="Images/food1.jpg" alt="" />
+                    </div>
+                    <div class="event-info">
+                        <h2>Sea Food Fest</h2>
+                        <h3>Date : 10th November 2023</h3>
+                        <h3>Ticket: $40 / person</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Cupiditate eaque nesciunt vel distinctio
+                            ratione voluptate, animi totam repellat porro magnam
+                            ea doloribus. Veritatis, quibusdam dolores
+                            temporibus iure debitis eligendi ratione?
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inquiry-form">
+                <div class="inquiry-form-title">
+                    <div class="sp-title">
+                        <img src="Images/hangingboard copy.jpeg" alt="" />
+                        <h1>Inquiry form</h1>
+                    </div>
+                </div>
+                <form action="#" method="POST">
+                    <input
+                        type="text"
+                        name="Name"
+                        id="name"
+                        placeholder="Enter your Name"
+                        required
+                    />
+                    <input
+                        type="text"
+                        name="Email"
+                        id="email"
+                        placeholder="Enter your Email"
+                        required
+                    />
+                    <input
+                        type="tel"
+                        id="phoneNumber"
+                        name="phoneNumber"
+                        placeholder="Enter Phone Number"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        required
+                    />
+                    <input type="date" name="Date" id="date" required />
+                    <label for="service">Number of Guests</label>
+                    <select name="Guest" id="guest">
+                        <option value="guest-1">10 - 40</option>
+                        <option value="guest-2">40 - 60</option>
+                        <option value="guest-3">60 - 100</option>
+                    </select>
+                    <textarea
+                        name="Message"
+                        id="message"
+                        cols="6"
+                        placeholder="Do you have any message for us?"
+                    ></textarea>
+                    <button type="submit" class="btn">Send</button>
+                </form>
+            </div>
+            <div class="image-display">
+                <div class="image_container" id="image_container">
+                    <div class="image" id="image"></div>
+                </div>
+            </div>
+            <div class="event-popup" id="popup">
+                <div class="popup-container">
+                    <img src="Images/ms-1.jpeg" alt="" />
+                    <div class="close-offer" onclick="close_popup()">X</div>
+                    <div class="offer-text">
+                        <h2>EXCLUSIVE OFFER</h2>
+                        <h3>SCHEDULE YOUR FIRST EVENT</h3>
+                        <h2>GET 20% OFF</h2>
+                        <p>Limited time only! Book Now</p>
+                    </div>
+                    <div class="offer-info">
+                        <br>
+                            "Unlock a special 10% off for your first event
+                            with us. Make your first event unforgettable!"
+                        </p>
+                        <button class="btn" onclick="">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    </body>
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="row">
+                    <div class="about-footer">
+                        <h3>Ocean's Bounty Seafood Grill</h3>
+                        <ul>
+                            <li>
+                                <a href="tel: +1 0123456789"
+                                    ><i
+                                        class="fas fa-phone fa-flip-horizontal"
+                                    ></i
+                                    >+1 1234561251</a
+                                >
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                1 / 105 Bay Lights,
+                                <br />Medford, <br />MA 02155
+                            </li>
+                        </ul>
+                        <a href="" class="btn red-btn">Book</a>
+                    </div>
+
+                    <div class="page-more-info">
+                        <div class="footer-title">
+                            <h4>Quick links</h4>
+                        </div>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Testimonial</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="page-more-info">
+                        <div class="footer-title">
+                            <h4>More Info</h4>
+                        </div>
+                        <ul>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Gift Card</a></li>
+                            <li><a href="#">Alergy Policy </a></li>
+                            <li><a href="#"> Employment</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="open-hours">
+                        <div class="footer-title">
+                            <h4>Open hours</h4>
+                            <ul class="footer-social">
+                                <li>
+                                    <a href="" target="_blank"
+                                        ><i class="fab fa-facebook-f"></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank"
+                                        ><i class="fab fa-instagram"></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank"
+                                        ><i class="fab fa-linkedin-in"></i
+                                    ></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <i class="far fa-clock"></i>Monday -
+                                        Thursday
+                                    </td>
+                                    <td>12:00pm - 11:00pm</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="far fa-clock"></i>Friday</td>
+                                    <td>12:00pm - 1:30am</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="far fa-clock"></i>Saturday
+                                    </td>
+                                    <td>9:00am - 1:30pm</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="far fa-clock"></i>Sunday</td>
+                                    <td>9:30am - 1:30pm</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <hr />
+
+                        <div class="footer-logo">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img
+                                                src="https://i.ibb.co/vxc577d/dummy-logo3.jpg"
+                                            />
+                                        </td>
+                                        <td>
+                                            <img
+                                                src="https://i.ibb.co/vxc577d/dummy-logo3.jpg"
+                                            />
+                                        </td>
+                                        <td>
+                                            <img
+                                                src="https://i.ibb.co/vxc577d/dummy-logo3.jpg"
+                                            />
+                                        </td>
+                                        <td>
+                                            <img
+                                                src="https://i.ibb.co/vxc577d/dummy-logo3.jpg"
+                                            />
+                                        </td>
+                                        <td>
+                                            <img
+                                                src="https://i.ibb.co/vxc577d/dummy-logo3.jpg"
+                                            />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr />
+
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="privacy-policy">
+                        <a href="">Privacy policy</a>
+                    </div>
+
+                    <div class="copyright">
+                        <p>
+                            &copy; 2023 Ocean's Bounty Seafood Grill. All rights
+                            reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</html>
