@@ -1,77 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ocean's Bounty Seafood Grill</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ocean's Bounty Seafood Grill</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /> -->
 
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em;
-        }
+        <link rel="stylesheet" href="restaurant.css" />
+        <link rel="stylesheet" href="about.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
 
-        #welcome-section,
-        #about-section,
-        #story-section {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+        <style>
+            .about-us-title {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
 
-        #welcome-section h2,
-        #about-section h2,
-        #story-section h2 {
-            color: #333;
-        }
+            .about-us-title h1 {
+                margin: 4%;
+                margin-left: 12%;
+            }
 
-        /* Add more styles as needed */
+            #about-section {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 2rem;
+            }
 
-    </style>
-</head>
+            #about-section img {
+                width: 80%;
+                height: 350px;
+                max-width: 800px;
+                margin-bottom: 2rem;
+                border-radius: 10px;
+            }
 
-<body>
-    <header>
-        <h1>About Us</h1>
-    </header>
+            #about-section p {
+                font-size: 20px;
+                max-width: 800px;
+                text-align: center;
+            }
 
-    <section id="welcome-section">
-        <h2>Welcome to Ocean's Bounty Seafood Grill</h2>
-        <p>Where the essence of the sea is brought to life on your plate.</p>
-    </section>
+            #story-section {
+                padding: 2rem;
+            }
 
-    <section id="about-section">
-        <h2>About Ocean's Bounty</h2>
-        <p>At Ocean's Bounty, we are more than just a restaurant; 
-                we are a celebration of the ocean's treasures. 
-                With a passion for seafood and a deep love for the 
-                coastal lifestyle, we have crafted an extraordinary dining 
-                experience that combines the freshest catches 
-                from the sea with the warmth of genuine hospitality.</p>
-    </section>
+            .slide_container {
+                width: 100%;
+                overflow: hidden;
+            }
 
-    <section id="story-section">
-        <h2>Our Story</h2>
-        <p>Nestled on the shores of Boston, Ocean's Bounty was born from a 
-                family's lifelong connection to the sea. Our founders, the 
-                Smith family, have been fishermen and seafood enthusiasts 
-                for generations. Their dream was to create a place where the 
-                community could savor the finest seafood while feeling the 
-                ocean breeze and hearing the soothing waves. Today, their 
-                vision has become a reality, and we continue to share their 
-                passion with each guest who walks through our doors.</p>
-    </section>
+            #about-slide {
+                width: 80%;
+                margin: auto;
+            }
 
-    <!-- Add more sections as needed -->
+            .swiper-slide {
+                width: 100%;
+                overflow: hidden;
+            }
+            #about-swiper-sl {
+                text-align: center;
+            }
 
-</body>
+            .about-image-s {
+                width: 100%;
+                max-height: 300px;
+                object-fit: cover;
+                border-radius: 10px;
+            }
 
+            .slider-about-txt {
+                display: flex;
+                justify-content: center;
+                max-width: 800px;
+                margin: auto;
+                text-align: center;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-----------------------------Header----------------------->
+        <div class="header" id="header">
+            <div class="header-items">
+                <nav class="header-text">
+                    <ul>
+                        <div class="left-header-text">
+                            <li>
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li>
+                                <a href="about.html" class="nav-link">About</a>
+                            </li>
+                            <li>
+                                <a href="menu.html" class="nav-link">Menu</a>
+                            </li>
+                            <li>
+                                <a href="reservation.html" class="nav-link"
+                                    >Reservation</a
+                                >
+                            </li>
+                        </div>
+                    </ul>
+                </nav>
+                <div class="logo-image">
+                    <a href="index.html">
+                        <img src="Images/rlogo.jpg" alt="" class="logo" />
+                    </a>
+                </div>
+                <nav class="header-text">
+                    <ul>
+                        <div class="right-header-text">
+                            <li>
+                                <a href="onlineOrder.html" class="nav-link"
+                                    >Online Order</a
+                                >
+                            </li>
+                            <li>
+                                <a href="events.html" class="nav-link"
+                                    >Events</a
+                                >
+                            </li>
+                            <li>
+                                <a href="giftCard.html" class="nav-link"
+                                    >Gift Card</a
+                                >
+                            </li>
+                            <li>
+                                <a href="contact.html" class="nav-link"
+                                    >Contact</a
+                                >
+                            </li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="about-us-title">
+            <div class="sp-title">
+                <img src="Images/hangingboard copy.jpeg" alt="" />
+                <h1>About Us</h1>
+            </div>
+        </div>
+
+        <section id="about-section">
+            <img src="Images/restaur.jpg" alt="" />
+            <p>
+                At Ocean's Bounty, we are more than just a restaurant; we are a
+                celebration of the ocean's treasures. With a passion for seafood
+                and a deep love for the coastal lifestyle, we have crafted an
+                extraordinary dining experience that combines the freshest
+                catches from the sea with the warmth of genuine hospitality.
+            </p>
+        </section>
+
+        <div id="story-section">
+            <div class="about-us-title">
+                <div class="sp-title">
+                    <img src="Images/hangingboard copy.jpeg" alt="" />
+                    <h1>Our Story</h1>
+                </div>
+            </div>
+            <div class="slide_container">
+                <div class="swiper" id="about-slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" id="about-swiper-sl">
+                            <img
+                                src="Images/about3.jpg"
+                                class="about-image-s"
+                            />
+                        </div>
+                        <div class="swiper-slide" id="about-swiper-sl">
+                            <img
+                                src="Images/about2.jpg"
+                                class="about-image-s"
+                            />
+                        </div>
+                        <div class="swiper-slide" id="about-swiper-sl">
+                            <img src="Images/fish.jpg" class="about-image-s" />
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="slider-about-txt">
+                <p>
+                    Nestled on the shores of Boston, Ocean's Bounty was born
+                    from a Smith's lifelong connection to the sea. Our founder,
+                    the Alexander Smith, was a fisherman and a seafood
+                    enthusiast. His dream was to create a place where the
+                    community could savor the finest seafood while feeling the
+                    ocean breeze and hearing the soothing waves. Today, his
+                    vision has become a reality, and we continue to share his
+                    passion with each guest who walks through our doors.
+                </p>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+                autoplay: {
+                    delay: 3000,
+                    dispableOnInteraction: false,
+                },
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+        </script>
+
+        <footer>
+            <div class="container">
+                <div class="footer-top">
+                    <div class="row">
+                        <div class="about-footer">
+                            <h3>Ocean's Bounty Seafood Grill</h3>
+                            <ul>
+                                <li>
+                                    <a href="tel: +1 0123456789"
+                                        ><i
+                                            class="fas fa-phone fa-flip-horizontal"
+                                        ></i
+                                        >+1 1234561251</a
+                                    >
+                                </li>
+                                <li>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    1 / 105 Bay Lights,
+                                    <br />Medford, <br />MA 02155
+                                </li>
+                            </ul>
+                            <a href="" class="btn red-btn">Reserve</a>
+                        </div>
+
+                        <div class="page-more-info">
+                            <div class="footer-title">
+                                <h4>Quick links</h4>
+                            </div>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="about.html">Testimonial</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="page-more-info">
+                            <div class="footer-title">
+                                <h4>More Info</h4>
+                            </div>
+                            <ul>
+                                <li><a href="events.html">Events</a></li>
+                                <li><a href="#">Gift Card target</a></li>
+
+                                <li>
+                                    <a
+                                        href="https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXX/Chapter140/Section6B"
+                                        target="_blank"
+                                        >Alergy Policy
+                                    </a>
+                                </li>
+
+                                <li><a href="contact.html"> Employment</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="open-hours">
+                            <div class="footer-title">
+                                <h4>Open hours</h4>
+                                <ul class="footer-social">
+                                    <li>
+                                        <a
+                                            href="https://www.facebook.com/MassWildlife/"
+                                            target="_blank"
+                                            ><i
+                                                class="fab fa-facebook-f"
+                                                target="_blank"
+                                            ></i
+                                        ></a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://www.instagram.com/massmarinefisheries/"
+                                            target="_blank"
+                                            ><i
+                                                class="fab fa-instagram"
+                                                target="_blank"
+                                            ></i
+                                        ></a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://www.instagram.com/massmarinefisheries/"
+                                            target="_blank"
+                                            ><i
+                                                class="fab fa-linkedin-in"
+                                                target="_blank"
+                                            ></i
+                                        ></a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <i class="far fa-clock"></i>Monday -
+                                            Thursday
+                                        </td>
+                                        <td>12:00pm - 11:00pm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="far fa-clock"></i>Friday
+                                        </td>
+                                        <td>12:00pm - 1:30am</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="far fa-clock"></i>Saturday
+                                        </td>
+                                        <td>9:00am - 1:30pm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="far fa-clock"></i>Sunday
+                                        </td>
+                                        <td>9:30am - 1:30pm</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <hr />
+
+                            <div class="footer-logo">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <img src="Images/rlogo.jpg" />
+                                            </td>
+                                            <td>
+                                                <img
+                                                    src="Images/mass_seafood.jpeg"
+                                                />
+                                            </td>
+                                            <td>
+                                                <img src="Images/rlogo.jpg" />
+                                            </td>
+                                            <td>
+                                                <img
+                                                    src="Images/mass_seafood.jpeg"
+                                                />
+                                            </td>
+                                            <td>
+                                                <img src="Images/rlogo.jpg" />
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+
+                <div class="footer-bottom">
+                    <div class="row">
+                        <div class="privacy-policy">
+                            <a href="">Privacy policy</a>
+                        </div>
+
+                        <div class="copyright">
+                            <p>
+                                &copy; 2023 Ocean's Bounty Seafood Grill. All
+                                rights reserved.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>

@@ -1,180 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact US</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact US</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="restaurant.css" />
-</head>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
 
-<body>
-    <div class="contact">
-        <h2>Contact Us</h2>
-        <form action="#" id="contact_form">
-            <div class="name">
-                <label for="name"></label>
-                <input type="text" placeholder="name" name="name" id="name_input" required>
-            </div>
-            <div class="email">
-                <label for="email"></label>
-                <input type="email" placeholder="e-mail" name="email" id="email_input" required>
-            </div>
-            <div class="subject">
-                <label for="subject"></label>
-                <select placeholder="subject line" name="subject" id="subject_input" required>
-                    <option disabled hidden selected>subject</option>
-                    <option>Leave a comment</option>
-                    <option>Quick question.</option>
-                    <option>Help with recent order</option>
-                </select>
-            </div>
-            <div class="message">
-                <label for="message"></label>
-                <textarea name="message" placeholder="message" id="message_input" cols="30" rows="5"
-                    required></textarea>
-            </div>
-            <div class="submit">
-                <input type="submit" value="submit" id="form_button" />
-            </div>
-        </form>
-    </div>
-    <!-- footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-top">
-                <div class="row">
-                    <div class="about-footer">
-                        <h3>Ocean's Bounty Seafood Grill</h3>
-                        <ul>
+        <link rel="stylesheet" href="restaurant.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
+    </head>
+
+    <body>
+        <!-----------------------------Header----------------------->
+        <div class="header" id="header">
+            <div class="header-items">
+                <nav class="header-text">
+                    <ul>
+                        <div class="left-header-text">
                             <li>
-                                <a href="tel: +1 0123456789"><i class="fas fa-phone fa-flip-horizontal"></i>+1
-                                    1234561251</a>
+                                <a href="index.html" class="nav-link">Home</a>
                             </li>
                             <li>
-                                <i class="fas fa-map-marker-alt"></i>
-                                1 / 105 Bay Lights,
-                                <br />Medford, <br />MA 02155
+                                <a href="about.html" class="nav-link">About</a>
                             </li>
-                        </ul>
-                        <a href="" class="btn red-btn">Book Now</a>
-                    </div>
-
-                    <div class="page-more-info">
-                        <div class="footer-title">
-                            <h4>Quick links</h4>
+                            <li>
+                                <a href="menu.html" class="nav-link">Menu</a>
+                            </li>
+                            <li>
+                                <a href="reservation.html" class="nav-link"
+                                    >Reservation</a
+                                >
+                            </li>
                         </div>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Testimonial</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="page-more-info">
-                        <div class="footer-title">
-                            <h4>More Info</h4>
+                    </ul>
+                </nav>
+                <div class="logo-image">
+                    <a href="index.html">
+                        <img src="Images/rlogo.jpg" alt="" class="logo" />
+                    </a>
+                </div>
+                <nav class="header-text">
+                    <ul>
+                        <div class="right-header-text">
+                            <li>
+                                <a href="onlineOrder.html" class="nav-link"
+                                    >Online Order</a
+                                >
+                            </li>
+                            <li>
+                                <a href="events.html" class="nav-link"
+                                    >Events</a
+                                >
+                            </li>
+                            <li>
+                                <a href="giftCard.html" class="nav-link"
+                                    >Gift Card</a
+                                >
+                            </li>
+                            <li>
+                                <a href="contact.html" class="nav-link"
+                                    >Contact</a
+                                >
+                            </li>
                         </div>
-                        <ul>
-                            <li><a href="#">Events</a></li>
-                            <li><a href="#">Gift Card</a></li>
-                            <li><a href="#">Alergy Policy </a></li>
-                            <li><a href="#"> Employment</a></li>
-                        </ul>
-                    </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
 
-                    <div class="open-hours">
-                        <div class="footer-title">
-                            <h4>Open hours</h4>
-                            <ul class="footer-social">
+        <!------------------------Contacts form -->
+        <div class="contact">
+            <div class="contact-us-title">
+                <div class="sp-title">
+                    <img src="Images/hangingboard copy.jpeg" alt="" />
+                    <h1>Contact Us</h1>
+                </div>
+            </div>
+            <form action="#" id="contact_form">
+                <div class="name">
+                    <label for="name"></label>
+                    <input
+                        type="text"
+                        placeholder="name"
+                        name="name"
+                        id="name_input"
+                        required
+                    />
+                </div>
+                <div class="email">
+                    <label for="email"></label>
+                    <input
+                        type="email"
+                        placeholder="e-mail"
+                        name="email"
+                        id="email_input"
+                        required
+                    />
+                </div>
+                <div class="subject">
+                    <label for="subject"></label>
+                    <select
+                        placeholder="subject line"
+                        name="subject"
+                        id="subject_input"
+                        required
+                    >
+                        <option disabled hidden selected>subject</option>
+                        <option>Employment</option>
+                        <option>Shop</option>
+                        <option>Leave a comment</option>
+                        <option>Quick question.</option>
+                        <option>Help with recent order</option>
+                    </select>
+                </div>
+                <div class="message">
+                    <label for="message"></label>
+                    <textarea
+                        name="message"
+                        placeholder="message"
+                        id="message_input"
+                        cols="30"
+                        rows="5"
+                        required
+                    ></textarea>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="submit" id="form_button" />
+                </div>
+            </form>
+        </div>
+
+        <script>
+            function validateForm() {
+                var subjectInput = document.getElementById('subject_input');
+                var subjectValue = subjectInput.value;
+
+                if (subjectValue === 'subject') {
+                    alert('Please select a subject.');
+                    return false;
+                }
+
+                return true;
+            }
+
+            document
+                .getElementById('contact_form')
+                .addEventListener('submit', function (event) {
+                    if (!validateForm()) {
+                        event.preventDefault();
+                    }
+                });
+        </script>
+
+        <footer>
+            <div class="container">
+                <div class="footer-top">
+                    <div class="row">
+                        <div class="about-footer">
+                            <h3>Ocean's Bounty Seafood Grill</h3>
+                            <ul>
                                 <li>
-                                    <a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="tel: +1 0123456789"
+                                        ><i
+                                            class="fas fa-phone fa-flip-horizontal"
+                                        ></i
+                                        >+1 1234561251</a
+                                    >
                                 </li>
                                 <li>
-                                    <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    1 / 105 Bay Lights,
+                                    <br />Medford, <br />MA 02155
                                 </li>
-                                <li>
-                                    <a href="" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                </li>
+                            </ul>
+                            <a href="reservation.html" class="btn red-btn"
+                                >Reserve</a
+                            >
+                        </div>
+
+                        <div class="page-more-info">
+                            <div class="footer-title">
+                                <h4>Quick links</h4>
+                            </div>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="about.html">Testimonial</a></li>
+                                <li><a href="contact.html">Contact</a></li>
                             </ul>
                         </div>
 
-                        <table class="table">
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <i class="far fa-clock"></i>Monday -
-                                        Thursday
-                                    </td>
-                                    <td>12:00pm - 11:00pm</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="far fa-clock"></i>Friday</td>
-                                    <td>12:00pm - 1:30am</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <i class="far fa-clock"></i>Saturday
-                                    </td>
-                                    <td>9:00am - 1:30pm</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="far fa-clock"></i>Sunday</td>
-                                    <td>9:30am - 1:30pm</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="page-more-info">
+                            <div class="footer-title">
+                                <h4>More Info</h4>
+                            </div>
+                            <ul>
+                                <li><a href="events.html">Events</a></li>
+                                <li><a href="#">Gift Card target</a></li>
 
-                        <hr />
+                                <li>
+                                    <a
+                                        href="https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXX/Chapter140/Section6B"
+                                        target="_blank"
+                                        >Alergy Policy
+                                    </a>
+                                </li>
 
-                        <div class="footer-logo">
-                            <table>
+                                <li><a href="contact.html"> Employment</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="open-hours">
+                            <div class="footer-title">
+                                <h4>Open hours</h4>
+                                <ul class="footer-social">
+                                    <li>
+                                        <a
+                                            href="https://www.facebook.com/MassWildlife/"
+                                            target="_blank"
+                                            ><i
+                                                class="fab fa-facebook-f"
+                                                target="_blank"
+                                            ></i
+                                        ></a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://www.instagram.com/massmarinefisheries/"
+                                            target="_blank"
+                                            ><i
+                                                class="fab fa-instagram"
+                                                target="_blank"
+                                            ></i
+                                        ></a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://www.instagram.com/massmarinefisheries/"
+                                            target="_blank"
+                                            ><i
+                                                class="fab fa-linkedin-in"
+                                                target="_blank"
+                                            ></i
+                                        ></a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <table class="table">
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <img src="https://i.ibb.co/vxc577d/dummy-logo3.jpg" />
+                                            <i class="far fa-clock"></i>Monday -
+                                            Thursday
                                         </td>
+                                        <td>12:00pm - 11:00pm</td>
+                                    </tr>
+                                    <tr>
                                         <td>
-                                            <img src="https://i.ibb.co/vxc577d/dummy-logo3.jpg" />
+                                            <i class="far fa-clock"></i>Friday
                                         </td>
+                                        <td>12:00pm - 1:30am</td>
+                                    </tr>
+                                    <tr>
                                         <td>
-                                            <img src="https://i.ibb.co/vxc577d/dummy-logo3.jpg" />
+                                            <i class="far fa-clock"></i>Saturday
                                         </td>
+                                        <td>9:00am - 1:30pm</td>
+                                    </tr>
+                                    <tr>
                                         <td>
-                                            <img src="https://i.ibb.co/vxc577d/dummy-logo3.jpg" />
+                                            <i class="far fa-clock"></i>Sunday
                                         </td>
-                                        <td>
-                                            <img src="https://i.ibb.co/vxc577d/dummy-logo3.jpg" />
-                                        </td>
+                                        <td>9:30am - 1:30pm</td>
                                     </tr>
                                 </tbody>
                             </table>
+
+                            <hr />
+
+                            <div class="footer-logo">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <img src="Images/rlogo.jpg" />
+                                            </td>
+                                            <td>
+                                                <img
+                                                    src="Images/mass_seafood.jpeg"
+                                                />
+                                            </td>
+                                            <td>
+                                                <img src="Images/rlogo.jpg" />
+                                            </td>
+                                            <td>
+                                                <img
+                                                    src="Images/mass_seafood.jpeg"
+                                                />
+                                            </td>
+                                            <td>
+                                                <img src="Images/rlogo.jpg" />
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+
+                <div class="footer-bottom">
+                    <div class="row">
+                        <div class="privacy-policy">
+                            <a href="">Privacy policy</a>
+                        </div>
+
+                        <div class="copyright">
+                            <p>
+                                &copy; 2023 Ocean's Bounty Seafood Grill. All
+                                rights reserved.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <hr />
-
-            <div class="footer-bottom">
-                <div class="row">
-                    <div class="privacy-policy">
-                        <a href="">Privacy policy</a>
-                    </div>
-
-                    <div class="copyright">
-                        <p>
-                            &copy; 2023 Ocean's Bounty Seafood Grill. All rights
-                            reserved.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-</body>
-
+        </footer>
+    </body>
 </html>

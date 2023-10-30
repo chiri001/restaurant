@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="restaurant.css" />
+        <link rel="stylesheet" type="text/css" href="onlineOrder.css" />
+        <style>
+            .main-online-title {
+                display: flex;
+                justify-content: center;
+            }
+
+            .main-online-title h1 {
+                margin-left: 10%;
+            }
+            .menu-section {
+                display: flex;
+                flex: 1;
+                flex-wrap: wrap;
+                margin-left: 3%;
+                margin-bottom: 3%;
+            }
+
+            .onlineOrder-title {
+                margin-top: 3%;
+                margin-left: 3.5%;
+                color: rgb(0 56 168);
+                width: 100%;
+            }
+
+            .onlineOrder-title h1 {
+                font-size: 25px;
+                width: 100%;
+            }
+
+            .menu-item-box {
+                background-color: white;
+                border-radius: 20px;
+                margin: 0.5%;
+                width: 30%;
+            }
+
+            .menu-item {
+                display: flex;
+                padding: 20px;
+            }
+
+            .menu-item h3 {
+                color: rgb(0 56 168);
+            }
+
+            .menu-item h4 {
+                color: rgb(0 56 168);
+            }
+
+            .menu-item h4 {
+                color: rgb(0 56 168);
+            }
+
+            .menu-item p {
+                color: rgb(0 56 168);
+            }
+
+            .menu-item label {
+                margin-left: 3%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-----------------------------Header----------------------->
+        <div class="header" id="header">
+            <div class="header-items">
+                <nav class="header-text">
+                    <ul>
+                        <div class="left-header-text">
+                            <li>
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li>
+                                <a href="about.html" class="nav-link">About</a>
+                            </li>
+                            <li>
+                                <a href="menu.html" class="nav-link">Menu</a>
+                            </li>
+                            <li>
+                                <a href="reservation.html" class="nav-link"
+                                    >Reservation</a
+                                >
+                            </li>
+                        </div>
+                    </ul>
+                </nav>
+                <div class="logo-image">
+                    <a href="index.html">
+                        <img src="Images/rlogo.jpg" alt="" class="logo" />
+                    </a>
+                </div>
+                <nav class="header-text">
+                    <ul>
+                        <div class="right-header-text">
+                            <li>
+                                <a href="onlineOrder.html" class="nav-link"
+                                    >Online Order</a
+                                >
+                            </li>
+                            <li>
+                                <a href="events.html" class="nav-link"
+                                    >Events</a
+                                >
+                            </li>
+                            <li>
+                                <a href="giftCard.html" class="nav-link"
+                                    >Gift Card</a
+                                >
+                            </li>
+                            <li>
+                                <a href="contact.html" class="nav-link"
+                                    >Contact</a
+                                >
+                            </li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="onlineOrder" id="onlineOrder">
+            <div class="main-online-title">
+                <div class="sp-title">
+                    <img src="Images/hangingboard copy.jpeg" alt="" />
+                    <h1>Online Order</h1>
+                </div>
+            </div>
+            <div class="onlineOrder-title">
+                <h2>Main Menu</h2>
+            </div>
+            <section class="menu-section" id="starters">
+                <div class="menu-item-box">
+                    <ul class="menu-items">
+                        <li class="menu-item">
+                            <input type="checkbox" id="item1" />
+                            <label for="item1">
+                                <h3>Clam Chowder</h3>
+                                <h4>$9.00</h4>
+                                <p>
+                                    Creamy New England clam chowder served with
+                                    oyster crackers.
+                                </p>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-item-box">
+                    <ul class="menu-items">
+                        <li class="menu-item">
+                            <input type="checkbox" id="item1" />
+                            <label for="item1">
+                                <h3>Coconut Shrimp</h3>
+                                <h4>$9.00</h4>
+                                <p>
+                                    Portobello mushrooms stuffed with lump
+                                    crabmeat and herbs, baked to perfection.
+                                </p>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-item-box">
+                    <ul class="menu-items">
+                        <li class="menu-item">
+                            <input type="checkbox" id="item1" />
+                            <label for="item1">
+                                <h3>Clam Chowder</h3>
+                                <h4>$10.00</h4>
+                                <p>
+                                    Creamy New England clam chowder served with
+                                    oyster crackers.
+                                </p>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-item-box">
+                    <ul class="menu-items">
+                        <li class="menu-item">
+                            <input type="checkbox" id="item1" />
+                            <label for="item1">
+                                <h3>Sushi Platte</h3>
+                                <h4>$28.00</h4>
+                                <p>
+                                    Chef's selection of assorted sushi and
+                                    sashimi.
+                                </p>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-item-box">
+                    <ul class="menu-items">
+                        <li class="menu-item">
+                            <input type="checkbox" id="item1" />
+                            <label for="item1">
+                                <h3>Seafood Gumbor</h3>
+                                <h4>$26.00</h4>
+                                <p>
+                                    A rich and hearty gumbo filled with a medley
+                                    of seafood, okra, and Andouille sausage.
+                                </p>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-item-box">
+                    <ul class="menu-items">
+                        <li class="menu-item">
+                            <input type="checkbox" id="item1" />
+                            <label for="item1">
+                                <h3>Lobster Tempura</h3>
+                                <h4>$24.00</h4>
+                                <p>
+                                    Lobster tails in a light tempura batter,
+                                    served with a sweet chili glaze.
+                                </p>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-item-box">
+                    <ul class="menu-items">
+                        <li class="menu-item">
+                            <input type="checkbox" id="item1" />
+                            <label for="item1">
+                                <h3>Fried Oyster</h3>
+                                <h4>$26.00</h4>
+                                <p>
+                                    Plump oysters lightly breaded and fried,
+                                    served with a lemon-dill aioli.
+                                </p>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-item-box">
+                    <ul class="menu-items">
+                        <li class="menu-item">
+                            <input type="checkbox" id="item1" />
+                            <label for="item1">
+                                <h3>Roasted Chilean Sea Bass</h3>
+                                <h4>$34.00</h4>
+                                <p>
+                                    Succulent Chilean sea bass, roasted with a
+                                    lemon-herb crust, served over coconut
+                                    jasmine rice.
+                                </p>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-item-box">
+                    <ul class="menu-items">
+                        <li class="menu-item">
+                            <input type="checkbox" id="item1" />
+                            <label for="item1">
+                                <h3>Shrimp and Lobster Linguine</h3>
+                                <h4>$32.00</h4>
+                                <p>
+                                    Linguine with shrimp and lobster in a garlic
+                                    white wine sauce, garnished with fresh
+                                    basil.
+                                </p>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <div class="onlineOrder-title">
+                <h2>Specialty Drinks Menu</h2>
+            </div>
+            <section class="menu-section" id="starters">
+                <div class="menu-item-box">
+                    <ul class="menu-items">
+                        <li class="menu-item">
+                            <input type="checkbox" id="item1" />
+                            <label for="item1">
+                                <h3>Virgin Piña Colada</h3>
+                                <h4>$7.00</h4>
+                                <p>
+                                    A tropical blend of fresh pineapple, coconut
+                                    cream, and crushed ice, garnished with a
+                                    pineapple wedge.
+                                </p>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-item-box">
+                    <ul class="menu-items">
+                        <li class="menu-item">
+                            <input type="checkbox" id="item1" />
+                            <label for="item1">
+                                <h3>Sparkling Berry Fizz</h3>
+                                <h4>$6.00</h4>
+                                <p>
+                                    Mixed berry puree, fresh lemon juice, and
+                                    sparkling water, garnished with a lemon
+                                    twist.
+                                </p>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-item-box">
+                    <ul class="menu-items">
+                        <li class="menu-item">
+                            <input type="checkbox" id="item1" />
+                            <label for="item1">
+                                <h3>Cucumber Cooler $7</h3>
+                                <h4>$7.00</h4>
+                                <p>
+                                    Fresh cucumber, mint, and lime juice muddled
+                                    with soda water and a hint of simple syrup.
+                                </p>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <div class="onlineOrder-title">
+                <h2>Dessert Menu</h2>
+            </div>
+            <section class="menu-section" id="starters">
+                <div class="menu-item-box">
+                    <ul class="menu-items">
+                        <li class="menu-item">
+                            <input type="checkbox" id="item1" />
+                            <label for="item1">
+                                <h3>Key Lime Pie</h3>
+                                <h4>$12.00</h4>
+                                <p>
+                                    A classic Floridian favorite with a tangy
+                                    key lime custard in a graham cracker crust,
+                                    topped with whipped cream and fresh lime
+                                    zest.
+                                </p>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-item-box">
+                    <ul class="menu-items">
+                        <li class="menu-item">
+                            <input type="checkbox" id="item1" />
+                            <label for="item1">
+                                <h3>Tiramisu</h3>
+                                <h4>$11.00</h4>
+                                <p>
+                                    A traditional Italian dessert featuring
+                                    layers of coffee-soaked ladyfingers,
+                                    mascarpone cheese, and cocoa, dusted with
+                                    cocoa powder.
+                                </p>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-item-box">
+                    <ul class="menu-items">
+                        <li class="menu-item">
+                            <input type="checkbox" id="item1" />
+                            <label for="item1">
+                                <h3>Fruit Sorbet Trio</h3>
+                                <h4>$10.00</h4>
+                                <p>
+                                    A refreshing trio of fruit sorbets: mango,
+                                    raspberry, and passion fruit, served with a
+                                    fresh fruit medley.
+                                </p>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-item-box">
+                    <ul class="menu-items">
+                        <li class="menu-item">
+                            <input type="checkbox" id="item1" />
+                            <label for="item1">
+                                <h3>Sea Salt Caramel Cheesecake</h3>
+                                <h4>$14.00</h4>
+                                <p>
+                                    A rich and creamy cheesecake on a graham
+                                    cracker crust, drizzled with sea salt
+                                    caramel sauce and garnished with toasted
+                                    pecans.
+                                </p>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-item-box">
+                    <ul class="menu-items">
+                        <li class="menu-item">
+                            <input type="checkbox" id="item1" />
+                            <label for="item1">
+                                <h3>Bread Pudding with Bourbon Sauce</h3>
+                                <h4>$9.00</h4>
+                                <p>
+                                    Homemade bread pudding with raisins and a
+                                    rich bourbon sauce, served warm with a scoop
+                                    of vanilla ice cream.
+                                </p>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <script>
+            const menuForm = document.getElementById('menu-form');
+            const summaryContainer = document.getElementById('summary');
+            const submitButton = document.getElementById('submit-button');
+
+            submitButton.addEventListener('click', () => {
+                displaySummary();
+            });
+
+            function displaySummary() {
+                const selectedItems = [];
+                const checkboxes = menuForm.querySelectorAll(
+                    'input[type="checkbox"]:checked'
+                );
+                checkboxes.forEach((checkbox) => {
+                    selectedItems.push(checkbox.value);
+                });
+
+                summaryContainer.innerHTML = `You selected: ${selectedItems.join(
+                    ', '
+                )} 
+      <br> Thank You For Your Purchase.`;
+            }
+        </script>
+
+        <footer>
+            <div class="container">
+                <div class="footer-top">
+                    <div class="row">
+                        <div class="about-footer">
+                            <h3>Ocean's Bounty Seafood Grill</h3>
+                            <ul>
+                                <li>
+                                    <a href="tel: +1 0123456789"
+                                        ><i
+                                            class="fas fa-phone fa-flip-horizontal"
+                                        ></i
+                                        >+1 1234561251</a
+                                    >
+                                </li>
+                                <li>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    1 / 105 Bay Lights,
+                                    <br />Medford, <br />MA 02155
+                                </li>
+                            </ul>
+                            <a href="" class="btn red-btn">Reserve</a>
+                        </div>
+
+                        <div class="page-more-info">
+                            <div class="footer-title">
+                                <h4>Quick links</h4>
+                            </div>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="about.html">Testimonial</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="page-more-info">
+                            <div class="footer-title">
+                                <h4>More Info</h4>
+                            </div>
+                            <ul>
+                                <li><a href="events.html">Events</a></li>
+                                <li><a href="#">Gift Card target</a></li>
+
+                                <li>
+                                    <a
+                                        href="https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXX/Chapter140/Section6B"
+                                        target="_blank"
+                                        >Alergy Policy
+                                    </a>
+                                </li>
+
+                                <li><a href="contact.html"> Employment</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="open-hours">
+                            <div class="footer-title">
+                                <h4>Open hours</h4>
+                                <ul class="footer-social">
+                                    <li>
+                                        <a
+                                            href="https://www.facebook.com/MassWildlife/"
+                                            target="_blank"
+                                            ><i
+                                                class="fab fa-facebook-f"
+                                                target="_blank"
+                                            ></i
+                                        ></a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://www.instagram.com/massmarinefisheries/"
+                                            target="_blank"
+                                            ><i
+                                                class="fab fa-instagram"
+                                                target="_blank"
+                                            ></i
+                                        ></a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://www.instagram.com/massmarinefisheries/"
+                                            target="_blank"
+                                            ><i
+                                                class="fab fa-linkedin-in"
+                                                target="_blank"
+                                            ></i
+                                        ></a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <i class="far fa-clock"></i>Monday -
+                                            Thursday
+                                        </td>
+                                        <td>12:00pm - 11:00pm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="far fa-clock"></i>Friday
+                                        </td>
+                                        <td>12:00pm - 1:30am</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="far fa-clock"></i>Saturday
+                                        </td>
+                                        <td>9:00am - 1:30pm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="far fa-clock"></i>Sunday
+                                        </td>
+                                        <td>9:30am - 1:30pm</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <hr />
+
+                            <div class="footer-logo">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <img src="Images/rlogo.jpg" />
+                                            </td>
+                                            <td>
+                                                <img
+                                                    src="Images/mass_seafood.jpeg"
+                                                />
+                                            </td>
+                                            <td>
+                                                <img src="Images/rlogo.jpg" />
+                                            </td>
+                                            <td>
+                                                <img
+                                                    src="Images/mass_seafood.jpeg"
+                                                />
+                                            </td>
+                                            <td>
+                                                <img src="Images/rlogo.jpg" />
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+
+                <div class="footer-bottom">
+                    <div class="row">
+                        <div class="privacy-policy">
+                            <a href="">Privacy policy</a>
+                        </div>
+
+                        <div class="copyright">
+                            <p>
+                                &copy; 2023 Ocean's Bounty Seafood Grill. All
+                                rights reserved.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

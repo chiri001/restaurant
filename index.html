@@ -21,17 +21,13 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        />
     </head>
 
     <body>
         <!-----------------------------Header----------------------->
         <div class="header" id="header">
             <div class="header-items">
-                <nav class="header-text">
+                <nav class="header-text" id="header-text">
                     <ul>
                         <div class="left-header-text">
                             <li>
@@ -41,10 +37,12 @@
                                 <a href="about.html" class="nav-link">About</a>
                             </li>
                             <li>
-                                <a href="#" class="nav-link">Menu</a>
+                                <a href="menu.html" class="nav-link">Menu</a>
                             </li>
                             <li>
-                                <a href="#" class="nav-link">Reservation</a>
+                                <a href="reservation.html" class="nav-link"
+                                    >Reservation</a
+                                >
                             </li>
                         </div>
                     </ul>
@@ -58,54 +56,84 @@
                     <ul>
                         <div class="right-header-text">
                             <li>
-                                <a href="#" class="nav-link">Online Order</a>
+                                <a href="onlineOrder.html" class="nav-link"
+                                    >Online Order</a
+                                >
                             </li>
                             <li>
                                 <a href="events.html" class="nav-link"
                                     >Events</a
                                 >
                             </li>
-                            <li><a href="#" class="nav-link">Gift Card</a></li>
                             <li>
-                                <a href="#" class="nav-link">Contact</a>
+                                <a href="giftCard.html" class="nav-link"
+                                    >Gift Card</a
+                                >
+                            </li>
+                            <li>
+                                <a href="contact.html" class="nav-link"
+                                    >Contact</a
+                                >
                             </li>
                         </div>
+                        <i class="fas fa-times" onclick="closeMenu()"></i>
                     </ul>
+                    <span class="hamburger-icon" onclick="openMenu()">
+                        <i class="fas fa-bars"></i>
+                    </span>
                 </nav>
             </div>
         </div>
 
         <!--------------------------------Home-------------------------->
         <div class="home" id="home">
-            <div class="swiper">
+            <div class="swiper" id="home-slide">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="image-container">
-                            <img src="Images/restr.jpg" alt="" />
+                            <img
+                                class="sw-image"
+                                src="Images/restaur.jpg"
+                                alt=""
+                            />
                             <div class="image-text">
                                 <h1>Ocean's Bounty Seafood Grill</h1>
                                 <p>Savor the Sea's Best</p>
-                                <button class="btn">Reserve</button>
+                                <a href="reservation.html">
+                                    <button class="btn">Reserve</button>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="image-container">
-                            <img src="Images/evts.jpg" alt="" />
+                            <img
+                                class="sw-image"
+                                src="Images/evts.jpg"
+                                alt=""
+                            />
                             <div class="image-text">
                                 <h1>Organize events with us</h1>
                                 <p>Let's make your event memorable</p>
-                                <button class="btn">Book</button>
+                                <a href="events.html">
+                                    <button class="btn">Book</button>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="image-container">
-                            <img src="Images/merch.jpg" alt="" />
+                            <img
+                                class="sw-image"
+                                src="Images/merch.jpg"
+                                alt=""
+                            />
                             <div class="image-text">
                                 <h1>Style with Ocean Bounty's merch</h1>
                                 <p>Online orders are accepted</p>
-                                <button class="btn">Shop</button>
+                                <a href="contact.html">
+                                    <button class="btn">Shop</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -138,7 +166,7 @@
                 <div class="other-specialties">
                     <div class="os-1">
                         <div class="image-container">
-                            <img src="Images/os-1.jpeg" alt="" class="os-img" />
+                            <img src="Images/mahi.jpg" alt="" class="os-img" />
                             <div class="specialty-text">
                                 <h2>Blackened Mahi-Mahi</h2>
                             </div>
@@ -164,159 +192,182 @@
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    </body>
 
-    <!-- footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-top">
-                <div class="row">
-                    <div class="about-footer">
-                        <h3>Ocean's Bounty Seafood Grill</h3>
-                        <ul>
-                            <li>
-                                <a href="tel: +1 0123456789"
-                                    ><i
-                                        class="fas fa-phone fa-flip-horizontal"
-                                    ></i
-                                    >+1 1234561251</a
-                                >
-                            </li>
-                            <li>
-                                <i class="fas fa-map-marker-alt"></i>
-                                1 / 105 Bay Lights,
-                                <br />Medford, <br />MA 02155
-                            </li>
-                        </ul>
-                        <a href="" class="btn">Book</a>
-                    </div>
-
-                    <div class="page-more-info">
-                        <div class="footer-title">
-                            <h4>Quick links</h4>
+        <footer>
+            <div class="container">
+                <div class="footer-top">
+                    <div class="row">
+                        <div class="about-footer">
+                            <h3>Ocean's Bounty Seafood Grill</h3>
+                            <ul>
+                                <li>
+                                    <a href="tel: +1 0123456789"
+                                        ><i
+                                            class="fas fa-phone fa-flip-horizontal"
+                                        ></i
+                                        >+1 1234561251</a
+                                    >
+                                </li>
+                                <li>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    1 / 105 Bay Lights,
+                                    <br />Medford, <br />MA 02155
+                                </li>
+                            </ul>
+                            <a href="reservation.html" class="red-btn"
+                                >Reserve</a
+                            >
                         </div>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Testimonial</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
 
-                    <div class="page-more-info">
-                        <div class="footer-title">
-                            <h4>More Info</h4>
-                        </div>
-                        <ul>
-                            <li><a href="#">Events</a></li>
-                            <li><a href="#">Gift Card</a></li>
-                            <li><a href="#">Alergy Policy </a></li>
-                            <li><a href="#"> Employment</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="open-hours">
-                        <div class="footer-title">
-                            <h4>Open hours</h4>
-                            <ul class="footer-social">
-                                <li>
-                                    <a href="" target="_blank"
-                                        ><i class="fab fa-facebook-f"></i
-                                    ></a>
-                                </li>
-                                <li>
-                                    <a href="" target="_blank"
-                                        ><i class="fab fa-instagram"></i
-                                    ></a>
-                                </li>
-                                <li>
-                                    <a href="" target="_blank"
-                                        ><i class="fab fa-linkedin-in"></i
-                                    ></a>
-                                </li>
+                        <div class="page-more-info">
+                            <div class="footer-title">
+                                <h4>Quick links</h4>
+                            </div>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="about.html">Testimonial</a></li>
+                                <li><a href="contact.html">Contact</a></li>
                             </ul>
                         </div>
 
-                        <table class="table">
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <i class="far fa-clock"></i>Monday -
-                                        Thursday
-                                    </td>
-                                    <td>12:00pm - 11:00pm</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="far fa-clock"></i>Friday</td>
-                                    <td>12:00pm - 1:30am</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <i class="far fa-clock"></i>Saturday
-                                    </td>
-                                    <td>9:00am - 1:30pm</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="far fa-clock"></i>Sunday</td>
-                                    <td>9:30am - 1:30pm</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="page-more-info">
+                            <div class="footer-title">
+                                <h4>More Info</h4>
+                            </div>
+                            <ul>
+                                <li><a href="events.html">Events</a></li>
+                                <li><a href="#">Gift Card target</a></li>
 
-                        <hr />
+                                <li>
+                                    <a
+                                        href="https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXX/Chapter140/Section6B"
+                                        target="_blank"
+                                        >Alergy Policy
+                                    </a>
+                                </li>
 
-                        <div class="footer-logo">
-                            <table>
+                                <li><a href="contact.html"> Employment</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="open-hours">
+                            <div class="footer-title">
+                                <h4>Open hours</h4>
+                                <ul class="footer-social">
+                                    <li>
+                                        <a
+                                            href="https://www.facebook.com/MassWildlife/"
+                                            target="_blank"
+                                            ><i
+                                                class="fab fa-facebook-f"
+                                                target="_blank"
+                                            ></i
+                                        ></a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://www.instagram.com/massmarinefisheries/"
+                                            target="_blank"
+                                            ><i
+                                                class="fab fa-instagram"
+                                                target="_blank"
+                                            ></i
+                                        ></a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://www.instagram.com/massmarinefisheries/"
+                                            target="_blank"
+                                            ><i
+                                                class="fab fa-linkedin-in"
+                                                target="_blank"
+                                            ></i
+                                        ></a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <table class="table">
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <img
-                                                src="https://i.ibb.co/vxc577d/dummy-logo3.jpg"
-                                            />
+                                            <i class="far fa-clock"></i>Monday -
+                                            Thursday
                                         </td>
+                                        <td>12:00pm - 11:00pm</td>
+                                    </tr>
+                                    <tr>
                                         <td>
-                                            <img
-                                                src="https://i.ibb.co/vxc577d/dummy-logo3.jpg"
-                                            />
+                                            <i class="far fa-clock"></i>Friday
                                         </td>
+                                        <td>12:00pm - 1:30am</td>
+                                    </tr>
+                                    <tr>
                                         <td>
-                                            <img
-                                                src="https://i.ibb.co/vxc577d/dummy-logo3.jpg"
-                                            />
+                                            <i class="far fa-clock"></i>Saturday
                                         </td>
+                                        <td>9:00am - 1:30pm</td>
+                                    </tr>
+                                    <tr>
                                         <td>
-                                            <img
-                                                src="https://i.ibb.co/vxc577d/dummy-logo3.jpg"
-                                            />
+                                            <i class="far fa-clock"></i>Sunday
                                         </td>
-                                        <td>
-                                            <img
-                                                src="https://i.ibb.co/vxc577d/dummy-logo3.jpg"
-                                            />
-                                        </td>
+                                        <td>9:30am - 1:30pm</td>
                                     </tr>
                                 </tbody>
                             </table>
+
+                            <hr />
+
+                            <div class="footer-logo">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <img src="Images/rlogo.jpg" />
+                                            </td>
+                                            <td>
+                                                <img
+                                                    src="Images/mass_seafood.jpeg"
+                                                />
+                                            </td>
+                                            <td>
+                                                <img src="Images/rlogo.jpg" />
+                                            </td>
+                                            <td>
+                                                <img
+                                                    src="Images/mass_seafood.jpeg"
+                                                />
+                                            </td>
+                                            <td>
+                                                <img src="Images/rlogo.jpg" />
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+
+                <div class="footer-bottom">
+                    <div class="row">
+                        <div class="privacy-policy">
+                            <a href="">Privacy policy</a>
+                        </div>
+
+                        <div class="copyright">
+                            <p>
+                                &copy; 2023 Ocean's Bounty Seafood Grill. All
+                                rights reserved.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <hr />
-
-            <div class="footer-bottom">
-                <div class="row">
-                    <div class="privacy-policy">
-                        <a href="">Privacy policy</a>
-                    </div>
-
-                    <div class="copyright">
-                        <p>
-                            &copy; 2023 Ocean's Bounty Seafood Grill. All rights
-                            reserved.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </body>
+    <!-- footer -->
 </html>

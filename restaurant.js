@@ -44,3 +44,14 @@ $(document).ready(function () {
 function close_popup() {
     document.getElementById('popup').style.display = 'none';
 }
+
+
+function openMenu() {
+    var sidemnu = document.getElementById('header-text');
+    sidemnu.style.right = '0';
+}
+
+function closeMenu() {
+    var sidemnu = document.getElementById('header-text');
+    sidemnu.style.right = '-100%'; // Adjust as necessary
+}
