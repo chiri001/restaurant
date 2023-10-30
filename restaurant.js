@@ -46,13 +46,13 @@ function close_popup() {
 }
 
 function openMenu() {
-    var sidemnu = document.getElementById('header-text');
-    sidemnu.style.right = '0';
+    var sideMenu = document.querySelector('.header-text ul');
+    sideMenu.classList.toggle('show');
 }
 
 function closeMenu() {
-    var sidemnu = document.getElementById('header-text');
-    sidemnu.style.right = '-100%'; // Adjust as necessary
+    var sideMenu = document.querySelector('.header-text ul');
+    sideMenu.classList.toggle('show');
 }
 
 function show_success() {
