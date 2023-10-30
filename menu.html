@@ -162,9 +162,15 @@
     <body>
         <!-----------------------------Header----------------------->
         <div class="header" id="header">
-            <div class="header-items">
+            <div class="header-items" id="header-text">
+                <div class="logo-image-2">
+                    <a href="index.html">
+                        <img src="Images/rlogo.jpg" alt="" class="logo" />
+                    </a>
+                </div>
                 <nav class="header-text">
                     <ul>
+                        <i class="fas fa-times" onclick="closeMenu()"></i>
                         <div class="left-header-text">
                             <li>
                                 <a href="index.html" class="nav-link">Home</a>
@@ -181,7 +187,30 @@
                                 >
                             </li>
                         </div>
+                        <div class="smallSize-header-text">
+                            <li>
+                                <a href="onlineOrder.html" class="nav-link"
+                                    >Online Order</a
+                                >
+                            </li>
+                            <li>
+                                <a href="events.html" class="nav-link"
+                                    >Events</a
+                                >
+                            </li>
+                            <li>
+                                <a href="giftCard.html" class="nav-link"
+                                    >Gift Card</a
+                                >
+                            </li>
+                            <li>
+                                <a href="contact.html" class="nav-link"
+                                    >Contact</a
+                                >
+                            </li>
+                        </div>
                     </ul>
+                    <i class="fas fa-bars" onclick="openMenu()"></i>
                 </nav>
                 <div class="logo-image">
                     <a href="index.html">
@@ -216,6 +245,7 @@
                 </nav>
             </div>
         </div>
+
         <div class="menuHeader">
             <div class="menu-title">
                 <img src="Images/hangingboard copy.jpeg" alt="" />

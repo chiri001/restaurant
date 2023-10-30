@@ -100,9 +100,15 @@
     <body>
         <!-----------------------------Header----------------------->
         <div class="header" id="header">
-            <div class="header-items">
+            <div class="header-items" id="header-text">
+                <div class="logo-image-2">
+                    <a href="index.html">
+                        <img src="Images/rlogo.jpg" alt="" class="logo" />
+                    </a>
+                </div>
                 <nav class="header-text">
                     <ul>
+                        <i class="fas fa-times" onclick="closeMenu()"></i>
                         <div class="left-header-text">
                             <li>
                                 <a href="index.html" class="nav-link">Home</a>
@@ -119,7 +125,30 @@
                                 >
                             </li>
                         </div>
+                        <div class="smallSize-header-text">
+                            <li>
+                                <a href="onlineOrder.html" class="nav-link"
+                                    >Online Order</a
+                                >
+                            </li>
+                            <li>
+                                <a href="events.html" class="nav-link"
+                                    >Events</a
+                                >
+                            </li>
+                            <li>
+                                <a href="giftCard.html" class="nav-link"
+                                    >Gift Card</a
+                                >
+                            </li>
+                            <li>
+                                <a href="contact.html" class="nav-link"
+                                    >Contact</a
+                                >
+                            </li>
+                        </div>
                     </ul>
+                    <i class="fas fa-bars" onclick="openMenu()"></i>
                 </nav>
                 <div class="logo-image">
                     <a href="index.html">
@@ -154,7 +183,6 @@
                 </nav>
             </div>
         </div>
-
         <div class="onlineOrder" id="onlineOrder">
             <div class="main-online-title">
                 <div class="sp-title">
@@ -169,7 +197,11 @@
                 <div class="menu-item-box">
                     <ul class="menu-items">
                         <li class="menu-item">
-                            <input type="checkbox" id="item1" />
+                            <input
+                                type="checkbox"
+                                id="Clam Chowder"
+                                value="Clam Chowder"
+                            />
                             <label for="item1">
                                 <h3>Clam Chowder</h3>
                                 <h4>$9.00</h4>
@@ -184,7 +216,11 @@
                 <div class="menu-item-box">
                     <ul class="menu-items">
                         <li class="menu-item">
-                            <input type="checkbox" id="item1" value = 'Coconut Shrimp' />
+                            <input
+                                type="checkbox"
+                                id="Coconut Shrimp"
+                                value="Coconut Shrimp"
+                            />
                             <label for="item1">
                                 <h3>Coconut Shrimp</h3>
                                 <h4>$9.00</h4>
@@ -199,13 +235,17 @@
                 <div class="menu-item-box">
                     <ul class="menu-items">
                         <li class="menu-item">
-                            <input type="checkbox" id="item1" />
+                            <input
+                                type="checkbox"
+                                id="Calamari Fritti"
+                                value="Calamari Fritti"
+                            />
                             <label for="item1">
-                                <h3>Clam Chowder</h3>
+                                <h3>Calamari Fritti</h3>
                                 <h4>$10.00</h4>
                                 <p>
-                                    Creamy New England clam chowder served with
-                                    oyster crackers.
+                                    Tender calamari rings, lightly fried, and
+                                    served with marinara and lemon aioli.
                                 </p>
                             </label>
                         </li>
@@ -214,7 +254,11 @@
                 <div class="menu-item-box">
                     <ul class="menu-items">
                         <li class="menu-item">
-                            <input type="checkbox" id="item1" />
+                            <input
+                                type="checkbox"
+                                id="Sushi Platte"
+                                value="Sushi Platte"
+                            />
                             <label for="item1">
                                 <h3>Sushi Platte</h3>
                                 <h4>$28.00</h4>
@@ -229,7 +273,11 @@
                 <div class="menu-item-box">
                     <ul class="menu-items">
                         <li class="menu-item">
-                            <input type="checkbox" id="item1" />
+                            <input
+                                type="checkbox"
+                                id="Seafood Gumbo"
+                                value="Seafood Gumbo"
+                            />
                             <label for="item1">
                                 <h3>Seafood Gumbor</h3>
                                 <h4>$26.00</h4>
@@ -244,7 +292,11 @@
                 <div class="menu-item-box">
                     <ul class="menu-items">
                         <li class="menu-item">
-                            <input type="checkbox" id="item1" />
+                            <input
+                                type="checkbox"
+                                id="Lobster Tempura"
+                                value="Lobster Tempura"
+                            />
                             <label for="item1">
                                 <h3>Lobster Tempura</h3>
                                 <h4>$24.00</h4>
@@ -259,7 +311,11 @@
                 <div class="menu-item-box">
                     <ul class="menu-items">
                         <li class="menu-item">
-                            <input type="checkbox" id="item1" />
+                            <input
+                                type="checkbox"
+                                id="Fried Oyster"
+                                value="Fried Oyster"
+                            />
                             <label for="item1">
                                 <h3>Fried Oyster</h3>
                                 <h4>$26.00</h4>
@@ -274,7 +330,11 @@
                 <div class="menu-item-box">
                     <ul class="menu-items">
                         <li class="menu-item">
-                            <input type="checkbox" id="item1" />
+                            <input
+                                type="checkbox"
+                                id="Roasted Chilean Sea Bass"
+                                value="Roasted Chilean Sea Bass"
+                            />
                             <label for="item1">
                                 <h3>Roasted Chilean Sea Bass</h3>
                                 <h4>$34.00</h4>
@@ -290,7 +350,11 @@
                 <div class="menu-item-box">
                     <ul class="menu-items">
                         <li class="menu-item">
-                            <input type="checkbox" id="item1" />
+                            <input
+                                type="checkbox"
+                                id="Shrimp and Lobster Linguine"
+                                value="Shrimp and Lobster Linguine"
+                            />
                             <label for="item1">
                                 <h3>Shrimp and Lobster Linguine</h3>
                                 <h4>$32.00</h4>
@@ -311,7 +375,11 @@
                 <div class="menu-item-box">
                     <ul class="menu-items">
                         <li class="menu-item">
-                            <input type="checkbox" id="item1" />
+                            <input
+                                type="checkbox"
+                                id="Virgin Piña Colada"
+                                value="Virgin Piña Colada"
+                            />
                             <label for="item1">
                                 <h3>Virgin Piña Colada</h3>
                                 <h4>$7.00</h4>
@@ -327,7 +395,11 @@
                 <div class="menu-item-box">
                     <ul class="menu-items">
                         <li class="menu-item">
-                            <input type="checkbox" id="item1" />
+                            <input
+                                type="checkbox"
+                                id="Sparkling Berry Fizz"
+                                value="Sparkling Berry Fizz"
+                            />
                             <label for="item1">
                                 <h3>Sparkling Berry Fizz</h3>
                                 <h4>$6.00</h4>
@@ -343,9 +415,13 @@
                 <div class="menu-item-box">
                     <ul class="menu-items">
                         <li class="menu-item">
-                            <input type="checkbox" id="item1" />
+                            <input
+                                type="checkbox"
+                                id="Cucumber Cooler"
+                                value="Cucumber Cooler"
+                            />
                             <label for="item1">
-                                <h3>Cucumber Cooler $7</h3>
+                                <h3>Cucumber Cooler</h3>
                                 <h4>$7.00</h4>
                                 <p>
                                     Fresh cucumber, mint, and lime juice muddled
@@ -363,7 +439,11 @@
                 <div class="menu-item-box">
                     <ul class="menu-items">
                         <li class="menu-item">
-                            <input type="checkbox" id="item1" />
+                            <input
+                                type="checkbox"
+                                id="Key Lime Pie"
+                                value="Key Lime Pie"
+                            />
                             <label for="item1">
                                 <h3>Key Lime Pie</h3>
                                 <h4>$12.00</h4>
@@ -380,7 +460,11 @@
                 <div class="menu-item-box">
                     <ul class="menu-items">
                         <li class="menu-item">
-                            <input type="checkbox" id="item1" />
+                            <input
+                                type="checkbox"
+                                id="Tiramisu"
+                                value="Tiramisu"
+                            />
                             <label for="item1">
                                 <h3>Tiramisu</h3>
                                 <h4>$11.00</h4>
@@ -397,7 +481,11 @@
                 <div class="menu-item-box">
                     <ul class="menu-items">
                         <li class="menu-item">
-                            <input type="checkbox" id="item1" />
+                            <input
+                                type="checkbox"
+                                id="Fruit Sorbet Trio"
+                                value="Fruit Sorbet Trio"
+                            />
                             <label for="item1">
                                 <h3>Fruit Sorbet Trio</h3>
                                 <h4>$10.00</h4>
@@ -413,7 +501,11 @@
                 <div class="menu-item-box">
                     <ul class="menu-items">
                         <li class="menu-item">
-                            <input type="checkbox" id="item1" />
+                            <input
+                                type="checkbox"
+                                id="Sea Salt Caramel Cheesecake"
+                                value="Sea Salt Caramel Cheesecake"
+                            />
                             <label for="item1">
                                 <h3>Sea Salt Caramel Cheesecake</h3>
                                 <h4>$14.00</h4>
@@ -430,7 +522,11 @@
                 <div class="menu-item-box">
                     <ul class="menu-items">
                         <li class="menu-item">
-                            <input type="checkbox" id="item1" />
+                            <input
+                                type="checkbox"
+                                id="Bread Pudding with Bourbon Sauce"
+                                value="Bread Pudding with Bourbon Sauce"
+                            />
                             <label for="item1">
                                 <h3>Bread Pudding with Bourbon Sauce</h3>
                                 <h4>$9.00</h4>
@@ -451,7 +547,7 @@
                 <div class="menu-item-box">
                     <ul class="menu-items">
                         <li class="menu-item">
-                            <input type="checkbox" id="item1" />
+                            <input type="checkbox" id="Hoodie" value="Hoodie" />
                             <label for="item1">
                                 <h3>Hoodie</h3>
                                 <select name="size" id="size">
@@ -473,7 +569,11 @@
                 <div class="menu-item-box">
                     <ul class="menu-items">
                         <li class="menu-item">
-                            <input type="checkbox" id="item1" />
+                            <input
+                                type="checkbox"
+                                id="SweatShirt"
+                                value="SweatShirt"
+                            />
                             <label for="item1">
                                 <h3>SweatShirt</h3>
                                 <select name="size" id="size">
@@ -495,7 +595,11 @@
                 <div class="menu-item-box">
                     <ul class="menu-items">
                         <li class="menu-item">
-                            <input type="checkbox" id="item1" />
+                            <input
+                                type="checkbox"
+                                id="T-shirt"
+                                value="T-shirt"
+                            />
                             <label for="item1">
                                 <h3>T-shirt</h3>
                                 <select name="size" id="size">
@@ -539,6 +643,10 @@
                 const checkboxes = document.querySelectorAll(
                     'input[type="checkbox"]:checked'
                 );
+                if (checkboxes.length === 0) {
+                    alert('Cart Empty, please buy something.');
+                    return; // Exit the function
+                }
                 checkboxes.forEach((checkbox) => {
                     selectedItems.push(checkbox.value);
                 });
@@ -552,15 +660,15 @@
 
             // Function to close the alert
             function closeOrderAlert() {
-                // You can use the `alert` method, but it's non-customizable and can't be closed programmatically.
-                // A better approach is to use a custom modal or dialog box for this purpose.
-                // However, if you want to close the standard alert, you can do it with a workaround:
-                setTimeout(() => {
-                    const alertBox = document.querySelector('.alert');
-                    if (alertBox) {
-                        alertBox.style.display = 'none';
-                    }
-                }, 100);
+                // Uncheck all checkboxes with JavaScript
+                const checkboxes = document.querySelectorAll(
+                    'input[type="checkbox"]'
+                );
+                checkboxes.forEach((checkbox) => {
+                    checkbox.checked = false;
+                });
+                // summaryContainer.innerHTML = '';
+                alert('Order canceled.');
             }
         </script>
 

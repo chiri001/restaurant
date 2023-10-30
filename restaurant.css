@@ -37,6 +37,10 @@ body {
     flex: 1;
 }
 
+.smallSize-header-text {
+    display: none;
+}
+
 .logo-image {
     display: flex;
     justify-content: center;
@@ -967,9 +971,9 @@ footer table.table tr td {
     text-align: center;
 }
 
-.hamburger-icon {
+.fas.fa-bars,
+.fas.fa-times {
     display: none;
-    font-size: 24px;
     cursor: pointer;
 }
 
@@ -980,37 +984,85 @@ footer table.table tr td {
     .body {
         width: 100vw;
     }
-    .header-items {
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
 
     .left-header-text,
-    .right-header-text {
-        flex: 1 1 100%;
-        justify-content: center;
+    .smallSize-header-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 
-    .nav-link {
-        font-size: 16px;
-        padding: 8px 5px;
+    .right-header-text {
+        display: none;
     }
 
     .logo-image {
-        flex: 0 0 100%;
-        margin: 0 auto 10px;
+        display: none;
     }
 
-    .logo {
-        max-width: 30%;
+    .logo-image-2 {
+        display: block;
+        margin-left: 2%;
+        margin-right: 50%;
+    }
+
+    .fas.fa-bars {
+        display: block;
+        font-size: 25px;
+        color: rgb(8, 8, 233);
+    }
+
+    .fas.fa-times {
+        display: block;
+        font-size: 20px;
+        color: rgb(8, 8, 233);
+    }
+
+    .logo-image-2 img {
+        width: 80px;
         height: auto;
     }
-
-    ul {
-        padding-left: 0;
-        text-align: center;
+    .hamburger-icon {
+        display: block;
+        color: rgb(8, 8, 233);
     }
+
+    .header-text ul {
+        background: rgb(248, 223, 175);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2000;
+        transition: right 0.5s ease;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-text ul.show {
+        right: 0;
+    }
+
+    .header-text ul li {
+        display: block;
+        margin: 10px;
+    }
+
+    .header-text ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .nav-link {
+        font-size: 22px;
+        padding: 8px;
+    }
+
     .home {
         margin: 10% 0;
     }
@@ -1384,8 +1436,8 @@ footer table.table tr td {
     .contact input,
     .contact select,
     .contact textarea {
-        margin-bottom: 1em;
-        padding-bottom: 0.5em;
+        margin-bottom: 10%;
+        padding-bottom: 0.5%;
     }
 
     .contact textarea {

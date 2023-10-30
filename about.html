@@ -95,9 +95,15 @@
     <body>
         <!-----------------------------Header----------------------->
         <div class="header" id="header">
-            <div class="header-items">
+            <div class="header-items" id="header-text">
+                <div class="logo-image-2">
+                    <a href="index.html">
+                        <img src="Images/rlogo.jpg" alt="" class="logo" />
+                    </a>
+                </div>
                 <nav class="header-text">
                     <ul>
+                        <i class="fas fa-times" onclick="closeMenu()"></i>
                         <div class="left-header-text">
                             <li>
                                 <a href="index.html" class="nav-link">Home</a>
@@ -114,7 +120,30 @@
                                 >
                             </li>
                         </div>
+                        <div class="smallSize-header-text">
+                            <li>
+                                <a href="onlineOrder.html" class="nav-link"
+                                    >Online Order</a
+                                >
+                            </li>
+                            <li>
+                                <a href="events.html" class="nav-link"
+                                    >Events</a
+                                >
+                            </li>
+                            <li>
+                                <a href="giftCard.html" class="nav-link"
+                                    >Gift Card</a
+                                >
+                            </li>
+                            <li>
+                                <a href="contact.html" class="nav-link"
+                                    >Contact</a
+                                >
+                            </li>
+                        </div>
                     </ul>
+                    <i class="fas fa-bars" onclick="openMenu()"></i>
                 </nav>
                 <div class="logo-image">
                     <a href="index.html">
@@ -200,8 +229,8 @@
             <div class="slider-about-txt">
                 <p>
                     Nestled on the shores of Boston, Ocean's Bounty was born
-                    from Alex Smith's lifelong connection to the sea. Our founder,
-                    the Alex Smith, was a fisherman and a seafood
+                    from Alex Smith's lifelong connection to the sea. Our
+                    founder, the Alex Smith, was a fisherman and a seafood
                     enthusiast. His dream was to create a place where the
                     community could savor the finest seafood while feeling the
                     ocean breeze and hearing the soothing waves. Today, his
@@ -212,6 +241,7 @@
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="restaurant.js"></script>
         <script>
             const swiper = new Swiper('.swiper', {
                 autoplay: {
