@@ -975,6 +975,10 @@ footer table.table tr td {
         width: 80px;
     }
 
+    .nav-link {
+        font-size: 18px;
+    }
+
     /* .hamburger-icon {
         display: block;
         color: rgb(8, 8, 233);

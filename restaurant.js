@@ -45,7 +45,6 @@ function close_popup() {
     document.getElementById('popup').style.display = 'none';
 }
 
-
 function openMenu() {
     var sidemnu = document.getElementById('header-text');
     sidemnu.style.right = '0';
@@ -54,4 +53,8 @@ function openMenu() {
 function closeMenu() {
     var sidemnu = document.getElementById('header-text');
     sidemnu.style.right = '-100%'; // Adjust as necessary
+}
+
+function show_success() {
+    alert('SUCESS');
 }
