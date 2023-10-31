@@ -11,6 +11,7 @@ $(document).ready(function () {
         },
     });
 });
+
 //javascript for events image
 var all_images = ['Images/food1.jpg', 'Images/restr1.jpg', 'Images/restr2.jpg'];
 
