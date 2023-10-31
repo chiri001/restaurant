@@ -45,16 +45,24 @@ function close_popup() {
     document.getElementById('popup').style.display = 'none';
 }
 
+//opens menu when clicked
 function openMenu() {
     var sideMenu = document.querySelector('.header-text ul');
     sideMenu.classList.toggle('show');
 }
 
+//closes menu when clicked
 function closeMenu() {
     var sideMenu = document.querySelector('.header-text ul');
     sideMenu.classList.toggle('show');
 }
 
-function show_success() {
-    alert('SUCESS');
+//show success of an event
+function showSuccess() {
+    //reset form
+    var form = document.querySelector('.inquiry-form form');
+    form.reset();
+
+    //show success
+    alert('Form submitted successfully!');
 }

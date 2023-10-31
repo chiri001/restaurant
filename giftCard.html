@@ -132,7 +132,7 @@
                     </div>
                 </div>
                 <div class="inquiry-form">
-                    <form action="#" method="POST">
+                    <form action="#" method="POST" onsubmit="return false;">
                         <input
                             type="text"
                             name="Name"
@@ -168,7 +168,7 @@
                             cols="6"
                             placeholder="Do you have any message for us?"
                         ></textarea>
-                        <button class="btn">Send</button>
+                        <button class="btn" onclick="showSuccess()">Send</button>
                     </form>
                 </div>
             </div>
