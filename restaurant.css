@@ -1286,6 +1286,11 @@ footer table.table tr td {
         width: 300px;
     }
 
+    .os-img {
+        height: 200px !important;
+        width: 300px !important;
+    }
+
     .os-1,
     .os-2,
     .os-3 {
