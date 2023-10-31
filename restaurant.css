@@ -1119,11 +1119,12 @@ footer table.table tr td {
     }
 
     .image-display {
-        height: 30vh !important;
+        height: 300px !important;
         width: 100% !important;
+        margin: 5% 0;
     }
     .image-container {
-        height: 30vh !important;
+        height: 300px !important;
         width: 100% !important;
     }
 
@@ -1496,11 +1497,12 @@ footer table.table tr td {
     }
 
     .image-display {
-        height: 30vh !important;
-        width: 90% !important;
+        height: 200px !important;
+        width: 100% !important;
     }
+
     .image-container {
-        height: 30vh !important;
+        height: 200px !important;
         width: 100% !important;
     }
 
